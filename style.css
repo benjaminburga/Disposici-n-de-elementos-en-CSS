@@ -1,15 +1,18 @@
-*{
-    padding: 0px;
-    margin: 0px;
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px ;
+}
+.btn::before {
+	content: "Pasa por encima";
 }
 
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
+.btn:hover {
+	color: white;
+	background-color: green;
 }
-.img-galeria{
 
-    width: 300px;
-
-
+.btn:hover::before {
+	content: "¡Hecho!";
 }
